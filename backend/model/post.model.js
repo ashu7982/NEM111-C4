@@ -5,9 +5,7 @@ const { Schema, model } = require("mongoose");
 const postSchema=Schema({
     title:String,
     body:String,
-    device:String,
-    userId:String,
-    username:String
+    device:String
 })
 
 // this is model

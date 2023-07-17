@@ -10,10 +10,10 @@ const auth=async(req,res,next)=>{
         req.body.username=decoded.username
         next()
       }else{
-        res.status(400).json({msg:"Wrong Crendital"})
+        res.status(400).json({msg:"Wrong Crendital"});
       }
     } catch (error) {
-        res.status(400).json({msg:"Not Authorize"})
+        res.status(400).json({msg:"Not Authorized"});
     }
  
 
